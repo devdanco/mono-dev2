@@ -1,0 +1,17 @@
+{
+  "name": "@mononxtest/mtypes",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "@polkadot/api": "10.9.1"
+  },
+  "type": "module",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  }
+}

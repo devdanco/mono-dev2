@@ -1,0 +1,60 @@
+{
+  "name": "@mononxtest/mtypes",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/mtypes/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/mtypes",
+        "main": "packages/mtypes/src/index.ts",
+        "tsConfig": "packages/mtypes/tsconfig.lib.json",
+        "assets": ["packages/mtypes/*.md"],
+        "transformers": [
+          {
+            "name": "typescript-transform-paths/nx-transformer"
+          }
+        ]
+      }
+    },
+    "build-types": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx esno node_modules/.bin/polkadot-types-from-defs --package @mononxtest/mtypes/interfaces --input packages/mtypes/src/interfaces --endpoint packages/mtypes/metadata.json",
+          "npx esno node_modules/.bin/polkadot-types-from-chain --package @mononxtest/mtypes/interfaces --endpoint packages/mtypes/metadata.json --output packages/mtypes/src/interfaces"
+        ],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/mtypes/**/*.ts",
+          "packages/mtypes/package.json"
+        ]
+      }
+    },
+    "semantic-release": {
+      "executor": "@goestav/nx-semantic-release:semantic-release",
+      "options": {
+        "branches": [
+          "main",
+          { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
+        ],
+        "buildTarget": "@mononxtest/mtypes:build",
+        "repositoryUrl": "https://github.com/devdanco/mono-dev2",
+        "outputPath": "dist/packages/mtypes",
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "${PROJECT_NAME}-v${version}"
+      }
+    }
+  },
+  "tags": []
+}

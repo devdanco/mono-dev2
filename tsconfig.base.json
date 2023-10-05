@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "esnext",
+    "module": "esnext",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mononxtest/mtypes": ["packages/mtypes/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

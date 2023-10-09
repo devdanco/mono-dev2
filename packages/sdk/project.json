@@ -45,7 +45,7 @@
           "main",
           { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
         ],
-        "buildTarget": "@mononxtest/sdk:build",
+        "buildTarget": "@mononxtest/sdk:build-tsup",
         "repositoryUrl": "https://github.com/devdanco/mono-dev2",
         "outputPath": "dist/packages/sdk",
         "github": true,

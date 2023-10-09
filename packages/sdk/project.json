@@ -7,8 +7,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "packages/sdk",
-        "command": "tsup ./src/index.ts --dts --format esm --clean --splitting false --outDir dist/packages/sdk"
+        "command": "tsup packages/sdk/src/index.ts --dts --format esm --clean --splitting false --outDir dist/packages/sdk"
       }
     },
     "lint": {
@@ -35,9 +34,10 @@
           "main",
           { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
         ],
+        "packageJsonDir": "packages/sdk",
         "buildTarget": "@mononxtest/sdk:build",
         "repositoryUrl": "https://github.com/devdanco/mono-dev2",
-        "outputPath": "packages/sdk/dist/packages/sdk",
+        "outputPath": "dist/packages/sdk",
         "github": true,
         "changelog": true,
         "npm": true,

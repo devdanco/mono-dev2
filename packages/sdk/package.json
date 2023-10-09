@@ -2,12 +2,12 @@
   "name": "@mononxtest/sdk",
   "version": "1.14.0",
   "type": "module",
-  "module": "./src/index.js",
-  "types": "./src/index.d.ts",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.js"
+      "types": "./index.d.ts",
+      "import": "./index.js"
     }
   },
   "peerDependencies": {

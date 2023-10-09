@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/mtypes-v1.2.0...@mononxtest/mtypes-v1.3.0) (2023-10-09)
+
+
+### Features
+
+* aaaaaa ([5fe70c8](https://github.com/devdanco/mono-dev2/commit/5fe70c87e81d75a5a613d07c416775e5e744592c))
+
 # [1.2.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/mtypes-v1.1.0...@mononxtest/mtypes-v1.2.0) (2023-10-05)
 
 

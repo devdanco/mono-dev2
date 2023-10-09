@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.12.0...@mononxtest/sdk-v1.13.0) (2023-10-09)
+
+
+### Features
+
+* hoho ([467a02e](https://github.com/devdanco/mono-dev2/commit/467a02e4d826bab34b42402f9f26737628b4bf3f))
+
 # [1.12.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.11.0...@mononxtest/sdk-v1.12.0) (2023-10-09)
 
 

@@ -20,6 +20,10 @@
     ".": {
       "types": "./src/index.d.ts",
       "import": "./src/index.js"
+    },
+    "./*": {
+      "types": "./src/*.d.ts",
+      "import": "./src/*.js"
     }
   },
   "publishConfig": {

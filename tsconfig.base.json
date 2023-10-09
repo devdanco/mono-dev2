@@ -10,10 +10,7 @@
     "module": "esnext",
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@mononxtest/mtypes": ["packages/mtypes/src/index.ts"]
-    }
+    "baseUrl": "."
   },
   "exclude": ["node_modules", "tmp"]
 }

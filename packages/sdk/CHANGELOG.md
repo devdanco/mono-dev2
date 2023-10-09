@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.9.0...@mononxtest/sdk-v1.9.1) (2023-10-09)
+
+
+### Bug Fixes
+
+* package ([f6786d3](https://github.com/devdanco/mono-dev2/commit/f6786d38aaacad05cd3f6b8c5418736bf1a25aec))
+
 # [1.9.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.8.0...@mononxtest/sdk-v1.9.0) (2023-10-09)
 
 

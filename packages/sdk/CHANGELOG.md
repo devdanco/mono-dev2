@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.9.1...@mononxtest/sdk-v1.10.0) (2023-10-09)
+
+
+### Features
+
+* aaaaaa ([5fe70c8](https://github.com/devdanco/mono-dev2/commit/5fe70c87e81d75a5a613d07c416775e5e744592c))
+
 ## [1.9.1](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.9.0...@mononxtest/sdk-v1.9.1) (2023-10-09)
 
 

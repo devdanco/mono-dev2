@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.11.0...@mononxtest/sdk-v1.12.0) (2023-10-09)
+
+
+### Features
+
+* tsup ([3f3d929](https://github.com/devdanco/mono-dev2/commit/3f3d929ca18bc972bb1e49aed1a3f996fba48963))
+
 # [1.11.0](https://github.com/devdanco/mono-dev2/compare/@mononxtest/sdk-v1.10.0...@mononxtest/sdk-v1.11.0) (2023-10-09)
 
 

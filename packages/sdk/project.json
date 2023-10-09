@@ -4,21 +4,10 @@
   "sourceRoot": "packages/sdk/src",
   "projectType": "library",
   "targets": {
-    "build-tsup": {
+    "build": {
       "executor": "nx:run-commands",
       "options": {
         "command": "tsup packages/sdk/src/index.ts --dts --format esm --clean --splitting false --outDir dist/packages/sdk"
-      }
-    },
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/sdk",
-        "main": "packages/sdk/src/index.ts",
-        "tsConfig": "packages/sdk/tsconfig.lib.json",
-        "assets": ["packages/sdk/*.md"],
-        "updateBuildableProjectPackageJsonDependencies": true
       }
     },
     "lint": {
@@ -45,7 +34,7 @@
           "main",
           { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
         ],
-        "buildTarget": "@mononxtest/sdk:build-tsup",
+        "buildTarget": "@mononxtest/sdk:build",
         "repositoryUrl": "https://github.com/devdanco/mono-dev2",
         "outputPath": "dist/packages/sdk",
         "github": true,

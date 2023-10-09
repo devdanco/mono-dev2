@@ -19,8 +19,7 @@
   "dependencies": {
     "@mangata-finance/type-definitions": "2.0.0-rc.8",
     "big.js": "6.2.1",
-    "tslog": "4.8.2",
-    "tslib": "^2.3.0"
+    "tslog": "4.8.2"
   },
   "publishConfig": {
     "access": "public",
